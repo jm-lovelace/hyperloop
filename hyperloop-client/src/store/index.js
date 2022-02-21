@@ -8,7 +8,11 @@ export default new Vuex.Store({
     loops: [],
     openItems: [],
     showNavbar: false,
-    userData: null
+    loginLock: false,
+    userid: null,
+    userData: null,
+    loopsUnsubscribe: null,
+    loopsLoading: false
   },
   mutations: {
     openItem(state, item, above)
